@@ -1,0 +1,36 @@
+create database demo;
+show databases;
+use demo;
+
+create table users (
+ id  int(3) NOT NULL AUTO_INCREMENT,
+ name varchar(120) NOT NULL,
+ email varchar(220) NOT NULL,
+ country varchar(120),
+ PRIMARY KEY (id),
+ address varchar(150) NOT NULL,
+ phone varchar(50) NOT NULL
+
+);
+
+
+select*from users;
+
+CREATE TABLE login (
+ id int(3) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (id),
+First_Name varchar(20) DEFAULT NULL,
+Last_Name varchar(20) DEFAULT NULL,
+ username varchar(45) NOT NULL,
+  password varchar(45) DEFAULT NULL,
+   Email varchar(45) DEFAULT NULL,
+   contact varchar(45) DEFAULT NULL
+ 
+ 
+);
+
+
+drop table login;
+
+INSERT INTO login (username, password) VALUES ("Poonam", "123");
+select*from login;
